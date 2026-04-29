@@ -180,15 +180,12 @@ Bank_Management_System/
 
 ---
 
-## 📚 Academic Purpose
 
-This project is developed as part of the **Database Management System** course under B.Tech CSE curriculum.
-
----
 
 ## 👨‍💻 Author
 
-**Your Name**
+AKSHAT KUMAR CHOUDHARY-2410031302
+KRISH KUMAR-2410031287
 B.Tech CSE
 IILM University Greater Noida
 Year: 2025–2028
@@ -201,4 +198,4 @@ The Bank Management System successfully demonstrates core DBMS concepts through 
 
 ---
 
-⭐ If you found this project helpful, feel free to explore and contribute!
+
