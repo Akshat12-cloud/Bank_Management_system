@@ -25,33 +25,54 @@ Concurrency control prevents this problem.
 
 ⚠ Problems Without Concurrency Control
 1️⃣ Lost Update Problem
+
 Two transactions update the same data, and one update is lost.
+
 2️⃣ Dirty Read
+
 A transaction reads data that has not been committed by another transaction.
+
 3️⃣ Non-Repeatable Read
+
 A row is read twice in the same transaction and gives different values.
+
 4️⃣ Phantom Read
+
 New rows appear in the result set during the execution of a transaction.
 
 
 🔐 Techniques Used for Concurrency Control
+
 1️⃣ Lock-Based Protocol
+
 Locks prevent other transactions from modifying data until the current transaction finishes.
+
 Types of Locks:
+
 Shared Lock (Read Lock)
+
 Exclusive Lock (Write Lock)
+
 Example:
 
 
 
 SQL
+
 START TRANSACTION;
+
 SELECT * FROM Account
+
 WHERE Account_No = 'A101'
+
 FOR UPDATE;
+
 UPDATE Account
+
 SET Balance = Balance - 5000
+
 WHERE Account_No = 'A101';
+
 COMMIT;
 
 
